@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.products {
+    align-self: center;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 30%;
+    height: 30%;
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
+    }
+    .products {
+        width: 80%;
+        margin: 100px;
+        justify-content: space-around;
+    }
+    img {
+        width: 30%;
+        height: 80%;
+        margin: 15px;
+        padding: 10px;
+        box-shadow: 2px 2px 10px 2px #CECECE;
+    }
+}
